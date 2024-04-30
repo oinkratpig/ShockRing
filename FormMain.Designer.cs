@@ -33,6 +33,9 @@
             buttonStop = new Button();
             buttonStart = new Button();
             labelActive = new Label();
+            trackBarSFX = new TrackBar();
+            labelSFX = new Label();
+            ((System.ComponentModel.ISupportInitialize)trackBarSFX).BeginInit();
             SuspendLayout();
             // 
             // textBoxActivateTimestamp
@@ -57,7 +60,7 @@
             // buttonStop
             // 
             buttonStop.BackColor = Color.LightCoral;
-            buttonStop.Location = new Point(12, 136);
+            buttonStop.Location = new Point(12, 119);
             buttonStop.Name = "buttonStop";
             buttonStop.Size = new Size(75, 23);
             buttonStop.TabIndex = 2;
@@ -68,7 +71,7 @@
             // buttonStart
             // 
             buttonStart.BackColor = Color.LightGreen;
-            buttonStart.Location = new Point(294, 136);
+            buttonStart.Location = new Point(294, 119);
             buttonStart.Name = "buttonStart";
             buttonStart.Size = new Size(75, 23);
             buttonStart.TabIndex = 3;
@@ -78,17 +81,36 @@
             // 
             // labelActive
             // 
-            labelActive.Location = new Point(1, 125);
+            labelActive.Location = new Point(1, 108);
             labelActive.Name = "labelActive";
             labelActive.Size = new Size(381, 44);
             labelActive.TabIndex = 4;
             labelActive.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // trackBarSFX
+            // 
+            trackBarSFX.Location = new Point(9, 69);
+            trackBarSFX.Name = "trackBarSFX";
+            trackBarSFX.Size = new Size(104, 45);
+            trackBarSFX.TabIndex = 5;
+            trackBarSFX.Scroll += trackBarSFX_Scroll;
+            // 
+            // labelSFX
+            // 
+            labelSFX.AutoSize = true;
+            labelSFX.Location = new Point(9, 51);
+            labelSFX.Name = "labelSFX";
+            labelSFX.Size = new Size(26, 15);
+            labelSFX.TabIndex = 6;
+            labelSFX.Text = "SFX";
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(382, 171);
+            ClientSize = new Size(382, 153);
+            Controls.Add(labelSFX);
+            Controls.Add(trackBarSFX);
             Controls.Add(buttonStart);
             Controls.Add(buttonStop);
             Controls.Add(textBoxActivate);
@@ -98,6 +120,7 @@
             MaximizeBox = false;
             Name = "FormMain";
             Text = "ShockRing";
+            ((System.ComponentModel.ISupportInitialize)trackBarSFX).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -109,5 +132,7 @@
         private Button buttonStop;
         private Button buttonStart;
         private Label labelActive;
+        private TrackBar trackBarSFX;
+        private Label labelSFX;
     }
 }
