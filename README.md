@@ -11,5 +11,5 @@ Easiest way to do this:
 2. Create a new file called "steam_appid.txt" in this folder.
 3. Open "steam_appid.txt", type "1245620", and hit save (the file should contain nothing except "1245620").
 4. Launch "eldenring.exe" through the folder. DO NOT open through Steam or nothing different will happen.
-5. If it worked, Elden Ring will launch with EAC disabled. The game will force offline mode. The game will tell you "inappropriate activity detected" - don't worry, that just means offline is now disabled.
+5. If it worked, Elden Ring will launch with EAC disabled. The game will force offline mode. The game will tell you "inappropriate activity detected" - don't worry, that just means it's now forcing you to play offline.
 6. ShockRing should work now.
